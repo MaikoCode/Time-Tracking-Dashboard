@@ -2,79 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
 
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+  <main>
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="user-card">
+    <div>
+      <img src="./images/image-jeremy.png" alt=" jeremy image" class="user-photo">
+      <div class="user-info">
+        <span>Report for</span>
+        <span>Jeremy Robson</span>
+      </div>
+    </div>
+
+    <div>
+      <p class="period">Daily</p>
+      <p class="period">Weekly</p>
+      <p class="Monthly"></p>
+    </div>
+
   </div>
+  
+  <div class="card-container">
+    <p><span>Work</span> <img src="./images/icon-ellipsis.svg" alt="icon"></p>
+    <p>
+      <span class="hours">32hrs <!-- weekly --></span>
+      <span class="previous">Previous - 36hrs <!-- weekly --></span>
+    </p>
+  </div>
+
+  <div class="card-container">
+    <p><span>Play</span> <img src="./images/icon-ellipsis.svg" alt="icon"></p>
+    <p>
+      <span class="hours">10hrs <!-- weekly --></span>
+      <span class="previous">Previous - 8hrs <!-- weekly --></span>
+    </p>
+  </div>
+ 
+
+  <div class="card-container">
+    <p><span>Study</span> <img src="./images/icon-ellipsis.svg" alt="icon"></p>
+    <p>
+      <span class="hours">4hrs <!-- weekly --></span>
+      <span class="previous">Previous - 7hrs <!-- weekly --></span>
+    </p>
+  </div>
+
+
+  <div class="card-container">
+    <p><span>Exercise</span> <img src="./images/icon-ellipsis.svg" alt="icon"></p>
+    <p>
+      <span class="hours"> 4hrs <!-- weekly --></span>
+      <span class="previous"> Previous - 5hrs <!-- weekly --></span>
+    </p>
+  </div>
+
+  
+
+  <div class="card-container">
+    <p><span>Social</span> <img src="./images/icon-ellipsis.svg" alt="icon"></p>
+    <p>
+      <span class="hours"> 5hrs <!-- weekly --></span>
+      <span class="previous"> Previous - 10hrs <!-- weekly --></span>
+    </p>
+  </div>
+
+  
+  <div class="card-container">
+    <p><span>Self Care</span> <img src="./images/icon-ellipsis.svg" alt="icon"></p>
+    <p>
+      <span class="hours"> 2hrs <!-- weekly --></span>
+      <span class="previous"> Previous - 2hrs <!-- weekly --></span>
+    </p>
+  </div>
+
+</main>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.linkedin.com/in/mamadou-maikoke-traore-16b262225/">Maikoke</a>.
+  </footer>
+
 </body>
 </html>

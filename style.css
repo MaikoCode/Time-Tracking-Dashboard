@@ -1,0 +1,34 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+:root{
+
+    --ft-size: 18px;
+
+    /* Primary */
+
+    --clr-pr-blue: hsl(246, 80%, 60%);
+    --clr-pr-red-work: hsl(15, 100%, 70%);
+    --clr-pr-soft-blue-play: hsl(195, 74%, 62%);
+    --clr-pr-light-red-study: hsl(348, 100%, 68%);
+    --clr-pr-lime-green-exercise: hsl(145, 58%, 55%);
+    --clr-pr-violet-social: hsl(264, 64%, 52%);
+    --clr-pr-soft-orange-selfcare: hsl(43, 84%, 65%);
+
+
+    /* Neutral */
+
+    --clr-very-dark-blue: hsl(226, 43%, 10%);
+    --clr-dark-blue: hsl(235, 46%, 20%);
+    --clr-desatured-blue: hsl(235, 45%, 61%);
+    --clr-pale-blue: hsl(236, 100%, 87%);
+
+
+}
+
+
+body{
+    min-height: 100vh;
+    background-color: var(--clr-very-dark-blue);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Rubik', sans-serif;
+}
