@@ -31,4 +31,170 @@ body{
     background-color: var(--clr-very-dark-blue);
     color: hsl(0, 0%, 100%);
     font-family: 'Rubik', sans-serif;
+
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    margin-bottom: 25px;
+    width: clamp(300px, 25vw, 500px);
+    height: 200px;
+}
+
+.user-card{
+    background-color: var(--clr-dark-blue);
+    border: 1px solid var(--clr-very-dark-blue);
+    border-radius: 15px;
+}
+
+.report-for{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--clr-pale-blue);
+}
+
+.name{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.user-label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    background-color: var(--clr-pr-blue);
+    border-radius: 15px;    
+}
+
+.period{
+    color: var(--clr-desatured-blue);
+}
+
+.period-card{
+    background-position: -100px;
+    height: 30%; 
+}
+
+.user-info{
+    margin-left: 25px;
+}
+
+.user-info span{
+    display: block;
+}
+
+.user-image{
+    width: 64px;
+    height: 64px;
+    border: 4px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
+
+
+.period-card{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-container{
+    border-radius: 15px;
+    cursor: pointer;
+    background-image: url(./images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 95% -5%;
+}
+
+.card-container p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container-content{
+    padding: 20px 25px;
+    background-color: var(--clr-dark-blue);
+    border-radius: 15px 15px 10px 10px;
+    height: 75%;
+    
+}
+
+.card-container img{
+    width: 24.5px;
+    height: 7px;
+}
+
+
+.banner{
+    height: 25%;
+    
+    
+}
+
+.card-container-content p:nth-child(1){
+    margin-bottom: 20px;
+}
+
+.card-container-content p:nth-child(2){
+    align-items: center;
+}
+
+.label{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.hours{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.previous{
+    font-weight: 400;
+    color: var(--clr-pale-blue);
+}
+
+.work{
+    background-color: var(--clr-pr-red-work);
+    background-image: url(./images/icon-work.svg);
+}
+
+.play{
+    background-color: var(--clr-pr-soft-blue-play);
+    background-image: url(./images/icon-play.svg);
+}
+
+.study{
+    background-color: var(--clr-pr-light-red-study);
+    background-image: url(./images/icon-study.svg);
+}
+
+.exercise{
+    background-color: var(--clr-pr-lime-green-exercise);
+    background-image: url(./images/icon-exercise.svg);
+}
+
+
+.social{
+    background-color: var(--clr-pr-violet-social);
+    background-image: url(./images/icon-social.svg);
+}
+
+.selfcare{
+    background-color: var(--clr-pr-soft-orange-selfcare);
+    background-image: url(./images/icon-self-care.svg);
+}
+
+
+.active{
+    color: hsl(0, 0%, 100%);
+    font-weight: normal;
 }
