@@ -27,10 +27,15 @@
 
 
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100vh;
     background-color: var(--clr-very-dark-blue);
     color: hsl(0, 0%, 100%);
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
 
 }
 
@@ -45,7 +50,9 @@ main{
 
 .card{
     margin-bottom: 25px;
-    width: clamp(300px, 25vw, 500px);
+    /* width: clamp(300px, 25vw, 500px); */
+    width: 80vw;
+   
     height: 200px;
 }
 
@@ -77,6 +84,7 @@ main{
 
 .period{
     color: var(--clr-desatured-blue);
+    cursor: pointer;
 }
 
 .period-card{
@@ -97,6 +105,7 @@ main{
     height: 64px;
     border: 4px solid hsl(0, 0%, 100%);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 
@@ -134,9 +143,7 @@ main{
 
 
 .banner{
-    height: 25%;
-    
-    
+    height: 25%; 
 }
 
 .card-container-content p:nth-child(1){
@@ -197,4 +204,101 @@ main{
 .active{
     color: hsl(0, 0%, 100%);
     font-weight: normal;
+}
+
+
+
+
+
+@media only screen and (min-width: 1100px){
+
+    main{
+        display: grid;
+        grid-template-areas: 'user-card work play study'
+                             'user-card exercise social selfcare';
+        grid-gap: 20px;   
+    }
+    
+    .card{
+        width: 20vw;
+    }
+
+    .user-card{
+        grid-area: user-card;
+        height: 95%;
+        
+    }
+
+    .work{
+        grid-area: work;
+    }
+
+    .play{
+        grid-area: play;
+    }
+
+    .study{
+        grid-area: study;
+    }
+
+    .exercise{
+        grid-area: exercise;
+    }
+
+    .social{
+        grid-area: social;
+    }
+
+    .selfcare{
+        grid-area: selfcare;
+    }
+
+    .card-container p:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .hours{
+        margin-bottom: 5px;
+    }
+
+    .name{
+        width: 100px;
+        font-size: 32px;
+    }
+    
+
+    .user-label {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: baseline;
+        height: 68%;
+    }
+
+
+    
+
+    .period-card {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: baseline;
+        padding-left: 25px;
+        height: 32%;
+    }
+
+    .banner{
+        height: 25%; 
+    }
+
+    .card-container-content{
+        height: 75%;
+        padding: 10px;
+    }
+
+    .label{
+        padding-left: 5px;
+        padding-top: 5px;
+    }
+
 }
