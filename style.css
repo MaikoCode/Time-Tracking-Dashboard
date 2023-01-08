@@ -126,6 +126,8 @@ main{
 .card-container p{
     display: flex;
     justify-content: space-between;
+    /* padding-top: 5px; */
+   
 }
 
 .card-container-content{
@@ -139,6 +141,7 @@ main{
 .card-container img{
     width: 24.5px;
     height: 7px;
+    align-self: center;
 }
 
 
@@ -157,6 +160,7 @@ main{
 .label{
     font-size: 1.125rem;
     font-weight: 500;
+    
 }
 
 .hours{
@@ -205,6 +209,20 @@ main{
     color: hsl(0, 0%, 100%);
     font-weight: normal;
 }
+
+.period:hover:not(.active){
+    color: hsla(0, 0%, 100%, 0.5);
+}
+
+.card-container-content:hover{
+    background-color: hsl(236, 41%, 34%);;
+}
+
+.card-container img:hover{
+    fill: red;
+}
+
+
 
 
 
@@ -298,7 +316,7 @@ main{
 
     .label{
         padding-left: 5px;
-        padding-top: 5px;
+        /* padding-top: 5px; */
     }
 
 }

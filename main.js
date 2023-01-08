@@ -25,7 +25,16 @@ function handlePeriod(e){
    value = value.toLowerCase()
 
    for(let i = 0; i < hours.length; i++){
+        let pass = null
+        let period = e.target.textContent
+        if( period === "Daily"){
+            pass = "Yesterday "
+        }else if(period === "Weekly"){
+            pass = "Last Week "
+        }else{
+            pass = "Last Month "
+        }
         hours[i].textContent = data[0][i].timeframes[value].current + "hrs"
-        previousPeriod[i].textContent = data[0][i].timeframes[value].previous + "hrs"
+        previousPeriod[i].textContent = pass + data[0][i].timeframes[value].previous + " - hrs"
    }
 }
